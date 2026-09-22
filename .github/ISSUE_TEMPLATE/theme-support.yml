@@ -23,7 +23,7 @@ body:
     id: store
     attributes:
       label: Shopify store URL
-      description: Example: storename.myshopify.com
+      description: "Example: storename.myshopify.com"
       placeholder: storename.myshopify.com
     validations:
       required: true
