@@ -1,0 +1,72 @@
+name: Noir Commerce theme support
+description: Request help with installation, settings, or a reproducible theme issue.
+title: "[Support]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for using Noir Commerce. Complete every relevant field. Do not include passwords, access tokens, customer data, or other sensitive information.
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      label: Contact email
+      description: Used only to follow up about this request. Note that GitHub issues are public.
+    validations:
+      required: true
+  - type: input
+    id: store
+    attributes:
+      label: Shopify store URL
+      description: Example: storename.myshopify.com
+      placeholder: storename.myshopify.com
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Noir Commerce version
+      placeholder: 1.1.2
+    validations:
+      required: true
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request type
+      options:
+        - Installation
+        - Theme editor or settings
+        - Product or collection template
+        - Layout or responsive issue
+        - Accessibility
+        - Performance
+        - Reproducible defect
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Describe the problem
+      description: Explain what happened, what you expected, and the steps needed to reproduce it.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recordings
+      description: Drag and drop files here. Remove customer information before uploading.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I removed passwords, access tokens, customer data, and other sensitive information.
+          required: true
+        - label: I tested the issue in an unmodified copy of the latest theme version where possible.
+          required: true
